@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --white-color: #F1EEEE;
+    --dark-color: #131200;
+    --primary-color: #81523F;
+    --secondary-color: #DDA77B;
+    --light-pink-color: #FAF4F5; 
+    --medium-orange-color: #dfc19b;  
+
+    --font-size-s: 0.9rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.12rem;
+    --font-size-l: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.3rem;
+
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    --border-radius-s: 8px;
+    --border-radius-m: 30px;
+    --border-radius-circle: 50%;
+
+    --site-max-width: 1300px;
+}
+
+body {
+    background-color: var(--light-pink-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: var(--white-color);
+    padding: 40px 30px;
+    border-radius: var(--border-radius-m);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-container h2 {
+    font-size: var(--font-size-xl);
+    color: var(--dark-color);
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-form label {
+    font-size: var(--font-size-n);
+    color: var(--dark-color);
+}
+
+.login-form input {
+    padding: 12px 15px;
+    font-size: var(--font-size-n);
+    border: 1px solid var(--medium-orange-color);
+    border-radius: var(--border-radius-s);
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.login-form input:focus {
+    border-color: var(--primary-color);
+}
+
+.login-form button {
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-semibold);
+    border: none;
+    border-radius: var(--border-radius-m);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+    background-color: var(--secondary-color);
+}
+
+.login-form .signup-link {
+    text-align: center;
+    font-size: var(--font-size-s);
+    margin-top: 10px;
+    color: var(--dark-color);
+}
+
+.login-form .signup-link a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: var(--font-weight-medium);
+}
+
+.login-form .signup-link a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/carrinho.css">
+</head>
+<body>
+
+    <header>
+         <h1>Sabores do Mundo</h1>
+         <a href="usuario.html"><i class="fa-solid fa-arrow-left"></i></a>
+    </header>
+    
+
+   <section class="cart-section">
+    <h2 class="cart-title">Minhas Compras</h2>
+
+    <div class="cart-items">
+        <div class="cart-item">
+            <img src="img/produto1.jpg" alt="Produto 1">
+            <div class="item-details">
+                <h3>Produto 1</h3>
+                <p>Descrição do produto 1</p>
+                <div class="item-quantity">
+                    <button class="decrease"><i class="fa-solid fa-minus"></i></button>
+                    <span>1</span>
+                    <button class="increase"><i class="fa-solid fa-plus"></i></button>
+                </div>
+                <p class="item-price">R$ 49,90</p>
+            </div>
+            <button class="remove-item"><i class="fa-solid fa-trash"></i></button>
+        </div>
+
+        <div class="cart-item">
+            <img src="img/produto2.jpg" alt="Produto 2">
+            <div class="item-details">
+                <h3>Produto 2</h3>
+                <p>Descrição do produto 2</p>
+                <div class="item-quantity">
+                    <button class="decrease"><i class="fa-solid fa-minus"></i></button>
+                    <span>2</span>
+                    <button class="increase"><i class="fa-solid fa-plus"></i></button>
+                </div>
+                <p class="item-price">R$ 79,90</p>
+            </div>
+            <button class="remove-item"><i class="fa-solid fa-trash"></i></button>
+        </div>
+    </div>
+
+    <div class="cart-summary">
+        <p>Subtotal: <span>R$ 209,70</span></p>
+        <button class="checkout-btn">Finalizar Compra</button>
+    </div>
+</section>
+
+</body>
+</html>
