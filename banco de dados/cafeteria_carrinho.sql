@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 8.0.40, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.43, for Win64 (x86_64)
 --
--- Host: 127.0.0.1    Database: cafeteria
+-- Host: localhost    Database: cafeteria
 -- ------------------------------------------------------
--- Server version	8.0.40
+-- Server version	8.0.43
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -33,7 +33,7 @@ CREATE TABLE `carrinho` (
   KEY `fk_carrinho_produto1_idx` (`produto_idproduto`),
   CONSTRAINT `fk_carrinho_cliente1` FOREIGN KEY (`cliente_idcliente`) REFERENCES `cliente` (`idcliente`),
   CONSTRAINT `fk_carrinho_produto1` FOREIGN KEY (`produto_idproduto`) REFERENCES `produto` (`idproduto`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -42,6 +42,7 @@ CREATE TABLE `carrinho` (
 
 LOCK TABLES `carrinho` WRITE;
 /*!40000 ALTER TABLE `carrinho` DISABLE KEYS */;
+INSERT INTO `carrinho` VALUES (1,1,2,'2'),(2,1,3,'1'),(3,2,5,'2'),(4,2,6,'1'),(5,3,2,'3'),(6,3,4,'1'),(7,4,4,'2'),(8,4,3,'2');
 /*!40000 ALTER TABLE `carrinho` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -54,4 +55,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-08-26 21:21:32
+-- Dump completed on 2025-09-08 17:16:00

@@ -2,7 +2,8 @@
  
 $host = "localhost";
 $user = "root";
-$pass = "&tec77@info!";
+//$pass = "&tec77@info!";
+$pass = "root";
 $banco = "cafeteria";
  
 $conexao = mysqli_connect($host, $user, $pass, $banco);
