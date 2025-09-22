@@ -12,10 +12,6 @@ O sistema é apoiado por um banco de dados estruturado, garantindo **segurança,
 - [Funcionalidades](#-funcionalidades)
 - [Modelagem do Banco de Dados](#-modelagem-do-banco-de-dados)
 - [Instalação e Execução](#-instalação-e-execução)
-- [Pontos Fortes](#-pontos-fortes)
-- [Melhorias Futuras](#-melhorias-futuras)
-- [Autores](#-autores)
-- [Licença](#-licença)
 
 ---
 
